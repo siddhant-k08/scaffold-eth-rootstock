@@ -105,11 +105,3 @@ You can get testnet tRBTC from the [Rootstock Faucet](https://faucet.rootstock.i
 Visit our [Rootstock docs](https://docs.rootstock.io) to learn how to start building with Rootstock.
 
 To know more about Scaffold-ETH features, check out their [website](https://scaffoldeth.io).
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License.
