@@ -17,8 +17,6 @@
 -   🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
 -   🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Rootstock network.
 
-![Front Page](.github/assets/front_page.png)
-
 ## Requirements
 
 Before you begin, you need to install the following tools:
