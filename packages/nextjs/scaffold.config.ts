@@ -1,6 +1,5 @@
-//import { monadTestnet } from "./utils/customChains";
+import { rootstockTestnet } from "./utils/customChains";
 import * as chains from "viem/chains";
-import { rootstockTestnet } from "viem/chains";
 
 export type ScaffoldConfig = {
   targetNetworks: readonly chains.Chain[];

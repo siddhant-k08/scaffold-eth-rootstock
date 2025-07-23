@@ -20,6 +20,9 @@ const deployerPrivateKey =
 // forking rpc url
 const forkingURL = process.env.FORKING_URL || "";
 
+// Rootstock RPC URL from environment variable
+const rootstockRpcUrl = process.env.ROOTSTOCK_RPC_URL || "https://rpc.testnet.rootstock.io";
+
 const config: HardhatUserConfig = {
   solidity: {
     compilers: [
@@ -35,7 +38,7 @@ const config: HardhatUserConfig = {
       },
     ],
   },
-  defaultNetwork: "localhost",
+  defaultNetwork: "rootstockTestnet",
   namedAccounts: {
     deployer: {
       // By default, it will take the first Hardhat account as the deployer
@@ -52,7 +55,7 @@ const config: HardhatUserConfig = {
       },
     },
     rootstockTestnet: {
-      url: "https://rpc.testnet.rootstock.io/HPS0hCCKUg1rXVZq3gXGGHgHy412RY-T",
+      url: rootstockRpcUrl,
       accounts: [deployerPrivateKey],
       chainId: 31,
     },
@@ -63,8 +66,8 @@ const config: HardhatUserConfig = {
   },
   sourcify: {
     enabled: true,
-    apiUrl: "https://sourcify-api-monad.blockvision.org",
-    browserUrl: "https://testnet.monadexplorer.com",
+    apiUrl: "https://sourcify-api.rootstock.io",
+    browserUrl: "https://explorer.testnet.rootstock.io",
   },
 };
 

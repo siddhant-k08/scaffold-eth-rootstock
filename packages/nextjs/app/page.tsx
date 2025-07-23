@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <div className="px-5">
           <h1 className="text-center">
             <span className="block text-2xl mb-2">Welcome to</span>
-            <span className="block text-4xl font-bold">Scaffold-ETH-Monad</span>
+            <span className="block text-4xl font-bold">Scaffold-ETH-Rootstock</span>
           </h1>
           <div className="flex justify-center items-center space-x-2 flex-col sm:flex-row">
             <p className="my-2 font-medium">Connected Address:</p>
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
               <BoltIcon className="h-8 w-8" />
               <p>
                 Get testnet funds from the{" "}
-                <Link href="#" passHref className="link">
+                <Link href="https://faucet.rootstock.io/" passHref className="link">
                   {/* TODO: Add Faucet link here */}Faucet
                 </Link>{" "}
               </p>
@@ -63,9 +63,9 @@ const Home: NextPage = () => {
             <div className="flex flex-col bg-base-200 border-base-100 border-2 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
               <MagnifyingGlassIcon className="h-8 w-8" />
               <p>
-                Explore your local transactions with the{" "}
-                <Link href="" passHref className="link">
-                  {/* TODO: Add Explorer link here */}Block Explorer
+                Explore your transactions with the{" "}
+                <Link href="https://explorer.testnet.rootstock.io/" passHref className="link" target="_blank">
+                  Block Explorer
                 </Link>{" "}
                 tab.
               </p>
@@ -74,8 +74,8 @@ const Home: NextPage = () => {
               <BookOpenIcon className="h-8 w-8" />
               <p>
                 Learn more about{" "}
-                <Link href="https://docs.monad.xyz" passHref className="link" target="_blank">
-                  Monad
+                <Link href="https://dev.rootstock.io/" passHref className="link" target="_blank">
+                  Rootstock
                 </Link>
                 .
               </p>

@@ -1,21 +1,21 @@
 import { defineChain } from "viem";
 
 // TODO: Add Chain details here.
-export const monadTestnet = defineChain({
-  id: 10143,
-  name: "Monad Testnet",
-  nativeCurrency: { name: "Monad", symbol: "MON", decimals: 18 },
+export const rootstockTestnet = defineChain({
+  id: 31,
+  name: "Rootstock Testnet",
+  nativeCurrency: { name: "Rootstock", symbol: "tRBTC", decimals: 18 },
   rpcUrls: {
     default: {
-      // TODO: Add Monad RPC URL
-      http: ["<MONAD_RPC_URL>"],
+      // TODO: Add Rootstock RPC URL
+      http: [process.env.NEXT_PUBLIC_ROOTSTOCK_RPC_URL || "https://rpc.testnet.rootstock.io"],
     },
   },
   blockExplorers: {
     default: {
-      name: "Monad Testnet Blockscout",
+      name: "Rootstock Testnet Explorer",
       // TODO: Add Explorer URL
-      url: "https://testnet.monadexplorer.com",
+      url: "https://explorer.testnet.rootstock.io",
     },
   },
 });

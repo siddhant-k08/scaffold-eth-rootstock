@@ -8,7 +8,7 @@ const execPromise = util.promisify(exec);
 async function main() {
   try {
     // Get the deployments directory path
-    const deploymentsPath = path.join(__dirname, "../deployments/monadTestnet");
+    const deploymentsPath = path.join(__dirname, "../deployments/rootstockTestnet");
 
     // Read all files in the deployments directory
     const files = fs.readdirSync(deploymentsPath);
@@ -39,7 +39,7 @@ async function main() {
     // Run the verify command with constructor arguments
     console.log("Starting verification...");
     const { stdout, stderr } = await execPromise(
-      `yarn hardhat verify --network monadTestnet ${contractAddress} ${constructorArgs.join(" ")}`,
+      `yarn hardhat verify --network rootstockTestnet ${contractAddress} ${constructorArgs.join(" ")}`,
     );
 
     console.log("Verification output:");

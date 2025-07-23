@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { MonadLogo } from "./assets/MonadLogo";
+import { RootstockLogo } from "./assets/RootstockLogo";
 import { hardhat } from "viem/chains";
 import { CurrencyDollarIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { HeartIcon } from "@heroicons/react/24/outline";
@@ -46,7 +46,7 @@ export const Footer = () => {
         <ul className="menu menu-horizontal w-full">
           <div className="flex justify-center items-center gap-2 text-sm w-full">
             <div className="text-center">
-              {/* TODO: add the scaffold-eth-monad repo link */}
+              {/* TODO: add the scaffold-eth-rootstock repo link */}
               <a href="https://github.com/scaffold-eth/se-2" target="_blank" rel="noreferrer" className="link">
                 Fork me
               </a>
@@ -68,12 +68,12 @@ export const Footer = () => {
               <p>and</p>
               <a
                 className="flex justify-center items-center gap-1"
-                href="https://monad.xyz/"
+                href="https://rootstock.io/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <MonadLogo className="w-3 h-5 pb-1" />
-                <span className="link">Monad</span>
+                <RootstockLogo className="w-3 h-5 pb-1" />
+                <span className="link">Rootstock</span>
               </a>
             </div>
             <span>·</span>
