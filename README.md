@@ -6,7 +6,7 @@
 
 <h4 align="center">
   <a href="https://docs.rootstock.io">Rootstock Documentation</a>
-  | <a href="https://github.com/rootstock/scaffold-eth-rootstock/issues">Report Issue</a>
+  | <a href="https://github.com/siddhant-k08/scaffold-eth-rootstock/issues">Report Issue</a>
 </h4>
 
 ⚙️ Built using NextJS, RainbowKit, Hardhat, Wagmi, Viem, and Typescript.
